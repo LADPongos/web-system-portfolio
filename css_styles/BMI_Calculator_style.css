@@ -1,0 +1,114 @@
+* {
+   font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+   height: 100vh;
+   background: url("/My_Portfolio/SL-043021-42650-20.jpg");
+   background-position: center;
+   background-size: cover;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.BMI-Calculator {
+   background-color: #181818;
+   border-radius: 15px;
+   color: white;
+   max-width: 500px;
+   overflow: hidden;
+   padding: 25px;
+   font-size: 18px;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   justify-items: center;
+}
+
+.BMI-Calculator tr {
+   height: 50px;
+}
+
+.BMI-Calculator input {
+   background-color: hsl(0, 0%, 15%);
+   color: #ffffff;
+   width: 50mm;
+   height: 8mm;
+   border: none;
+   border-radius: 10px;
+   font-size: 18px;
+}
+
+.BMI-Calculator div {
+   margin: 10px 0px 10px 0px;
+}
+
+.BMI-Calculator .output-section {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.BMI-Calculator .output-section button {
+   font-size: 18px;
+   width: 150px;
+   height: 30px;
+   color: #ffffff;
+   background-color: hsl(0, 0%, 15%);
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+.BMI-Calculator .scale-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.BMI-Calculator #scale {
+   position: relative;
+   width: 100%;
+   max-width: 400px;
+   height: 30px;
+   background: linear-gradient(to right, #33b8bf, #82b115, #f2bc28, #e98013, #c9383b);
+   border-radius: 15px;
+   margin: 20px 0;
+}
+
+.BMI-Calculator #pointer {
+   position: absolute;
+   top: -20px;
+   width: 10px;
+   height: 49px;
+   background: #ffffff;
+   border-radius: 5px;
+   border: solid black;
+   transform: translateX(-50%);
+}
+
+.BMI-Calculator #output {
+   margin-top: 10px;
+   font-weight: bold;
+}
+
+.BMI-Calculator .image-placeholder {
+   width: 150px;
+   height: 150px;
+   border: 1px solid #ffffff;
+   background: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   border-radius: 10px;
+}
+
+.BMI-Calculator .image-placeholder img {
+   width: 150px;
+   height: 150px;
+}

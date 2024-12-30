@@ -1,0 +1,178 @@
+body {
+   background-image: url("/My_Portfolio/SL-043021-42650-20.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: #e6dcd0;
+   font-family: "Bodoni Moda";
+}
+
+.global-container {
+   width: 210mm;
+   background: transparent;
+   backdrop-filter: blur(30px);
+   margin: auto;
+   border-radius: 30px;
+   padding: 20px;
+}
+
+h2 {
+   display: inline-block;
+   transition: 0.3s;
+}
+
+h2:hover {
+   color: #d45c27;
+}
+
+.container-1 input {
+   width: 85mm;
+   height: 8mm;
+   color: #ffffff;
+   background-color: #1f1b19;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   font-family: "Bodoni Moda";
+   transition: 0.3s;
+}
+
+.container-1 select {
+   width: 85mm;
+   height: 8.7mm;
+   color: #ffffff;
+   background-color: #1f1b19;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   font-family: "Bodoni Moda";
+   transition: 0.3s;
+}
+
+.form-container-1 {
+   display: flex;
+   justify-content: space-evenly;
+   font-size: 18px;
+}
+
+.form-container-1 label {
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 5px;
+   transition: 0.3s;
+}
+
+
+.photo-submit {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.photo-submit img {
+   width: 160px;
+   height: 160px;
+   border-radius: 50%;
+}
+
+
+.container-2 input {
+   width: 80mm;
+   height: 8mm;
+   color: #ffffff;
+   background-color: #1f1b19;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   font-family: "Bodoni Moda";
+   transition: 0.3s;
+}
+
+.form-container-2 label {
+   transition: 0.3s;
+}
+
+.first_tr td:hover {
+   transition: 0.3s;
+}
+
+.first_tr td:hover {
+   color: #d45c27;
+}
+
+label:hover {
+   color: #d45c27;
+}
+
+input:hover,
+select:hover {
+   background-color: #332e32;
+}
+
+table,
+tr,
+td {
+   font-size: 18px;
+   padding: 10px;
+}
+
+.container-3 input {
+   width: 60mm;
+   height: 8mm;
+   color: #ffffff;
+   background-color: #1f1b19;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   font-family: "Bodoni Moda";
+   transition: 0.3s;
+}
+
+.container-3 label {
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 5px;
+   font-size: 18px;
+   transition: 0.3s;
+}
+
+.form-container-3 {
+   display: flex;
+   justify-content: space-evenly;
+
+}
+
+.sub-container-3 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+
+.container-3 input:hover {
+   background-color: #332e32;
+}
+
+.submit-reset {
+   display: flex;
+   justify-content: space-around;
+}
+
+.submit-reset input {
+   width: 40mm;
+   height: 8mm;
+   color: #ffffff;
+   background-color: #1f1b19;
+   border-radius: 10px;
+   border: none;
+   font-size: 18px;
+   font-family: "Bodoni Moda";
+   transition: 0.3s;
+}
+
+.submit-reset input:hover {
+   background-color: #332e32;
+   box-shadow: 0 0 10px #fff, 0 0 20px #d45c27, 0 0 30px #d45c27, 0 0 40px #d45c27;
+}
