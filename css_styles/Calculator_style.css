@@ -4,7 +4,7 @@
 
 body {
    height: 100vh;
-   background: url("/My_Portfolio/SL-043021-42650-20.jpg");
+   background: url("./images/SL-043021-42650-20.jpg");
    background-position: center;
    background-size: cover;
    margin: 0;
