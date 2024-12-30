@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>BMI Calculator</title>
-   <link rel="stylesheet" href="BMI_Calculator_style.css">
+   <link rel="stylesheet" href="./css_styles/BMI_Calculator_style.css">
 </head>
 
 <body>
@@ -63,20 +63,20 @@
 
          if (result > 40) {
             category = "Very Obese";
-            imagePath = "very-obese.jpg";
+            imagePath = "./images/bmi_weight_class_img/very-obese.jpg";
          }
          else if (result > 30) {
             category = "Obese";
-            imagePath = "obese.jpg";
+            imagePath = "./images/bmi_weight_class_img/obese.jpg";
          } else if (result > 25) {
             category = "Overweight";
-            imagePath = "over-weight.jpg"
+            imagePath = "./images/bmi_weight_class_img/over-weight.jpg"
          } else if (result > 18.5) {
             category = "Normal Weight";
-            imagePath = "normal-weight.jpg"
+            imagePath = "./images/bmi_weight_class_img/normal-weight.jpg"
          } else {
             category = "Underweight";
-            imagePath = "under-weight.jpg";
+            imagePath = "./images/bmi_weight_class_img/under-weight.jpg";
          }
 
          document.getElementById("result").textContent = `Your BMI is: ${result.toFixed(2)}, ${category}.`;
