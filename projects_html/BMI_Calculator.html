@@ -63,20 +63,20 @@
 
          if (result > 40) {
             category = "Very Obese";
-            imagePath = "./images/bmi_weight_class_img/very-obese.jpg";
+            imagePath = "../images/bmi_weight_class_img/very-obese.jpg";
          }
          else if (result > 30) {
             category = "Obese";
-            imagePath = "./images/bmi_weight_class_img/obese.jpg";
+            imagePath = "../images/bmi_weight_class_img/obese.jpg";
          } else if (result > 25) {
             category = "Overweight";
-            imagePath = "./images/bmi_weight_class_img/over-weight.jpg"
+            imagePath = "../images/bmi_weight_class_img/over-weight.jpg"
          } else if (result > 18.5) {
             category = "Normal Weight";
-            imagePath = "./images/bmi_weight_class_img/normal-weight.jpg"
+            imagePath = "../images/bmi_weight_class_img/normal-weight.jpg"
          } else {
             category = "Underweight";
-            imagePath = "./images/bmi_weight_class_img/under-weight.jpg";
+            imagePath = "../images/bmi_weight_class_img/under-weight.jpg";
          }
 
          document.getElementById("result").textContent = `Your BMI is: ${result.toFixed(2)}, ${category}.`;
