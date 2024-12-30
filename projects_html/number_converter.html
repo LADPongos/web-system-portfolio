@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Number System Converter</title>
+   <link rel="stylesheet" href="number_converter.css">
+</head>
+
+<body>
+   <div class="number-converter-container">
+      <h1>NUMBER SYSTEM CONVERTER</h1>
+      <hr>
+      <div>
+         <select class="input-type-class" id="input-type-id">
+            <option value="input-binary">BIN</option>
+            <option value="input-octal">OCT</option>
+            <option value="input-decimal">DEC</option>
+            <option value="input-hexadecimal">HEX</option>
+         </select>
+         <input class="input-number-class" id="input-number-id">
+      </div>
+
+      <button class="convert-button" onclick="convert_number()">CONVERT</button>
+
+      <div>
+         <select class="output-type-class" id="output-type-id">
+            <option value="output-binary">BIN</option>
+            <option value="output-octal">OCT</option>
+            <option value="output-decimal">DEC</option>
+            <option value="output-hexadecimal">HEX</option>
+         </select>
+         <input class="output-number-class" id="output-number-id" disabled>
+      </div>
+   </div>
+
+   <script src="number_converter.js"></script>
+</body>
+
+</html>

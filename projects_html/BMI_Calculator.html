@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BMI Calculator</title>
+   <link rel="stylesheet" href="BMI_Calculator_style.css">
+</head>
+
+<body>
+   <div class="BMI-Calculator">
+      <h2>BMI CALCULATOR</h2>
+      <hr>
+      <div>
+         <table>
+            <tr class="user-height-row">
+               <td><label for="user-height">Enter height:</label></td>
+               <td><input type="text" id="user-height" placeholder="In centimeters"></td>
+            </tr>
+
+            <tr class="user-weight-row">
+               <td><label for="user-weight">Enter weight:</label></td>
+               <td><input type="text" id="user-weight" placeholder="In kilograms"></td>
+            </tr>
+         </table>
+      </div>
+      <div class="output-section">
+         <button onclick="calculate_bmi()">Calculate BMI</button>
+         <p id="result">Enter your width and height.</p>
+      </div>
+      <div class="scale-container">
+         <div class="image-placeholder" id="image-placeholder">
+            <p>No Image</p>
+         </div>
+         <div id="scale">
+            <div id="pointer"></div>
+         </div>
+      </div>
+   </div>
+
+   <script>
+      function calculate_bmi() {
+         let category = "";
+         let imagePath = "";
+         let heightInput = document.getElementById("user-height").value;
+         let weightInput = document.getElementById("user-weight").value;
+
+         if (heightInput.trim() === "" || weightInput.trim() === "") {
+            document.getElementById("result").textContent = "Please enter both height and weight.";
+            return;
+         }
+
+         let height = parseFloat(heightInput) / 100;
+         let weight = parseFloat(weightInput);
+
+         if (isNaN(height) || isNaN(weight)) {
+            document.getElementById("result").textContent = "Invalid input. Please enter numeric values.";
+            return;
+         }
+
+         let result = weight / (height * height);
+
+         if (result > 40) {
+            category = "Very Obese";
+            imagePath = "very-obese.jpg";
+         }
+         else if (result > 30) {
+            category = "Obese";
+            imagePath = "obese.jpg";
+         } else if (result > 25) {
+            category = "Overweight";
+            imagePath = "over-weight.jpg"
+         } else if (result > 18.5) {
+            category = "Normal Weight";
+            imagePath = "normal-weight.jpg"
+         } else {
+            category = "Underweight";
+            imagePath = "under-weight.jpg";
+         }
+
+         document.getElementById("result").textContent = `Your BMI is: ${result.toFixed(2)}, ${category}.`;
+
+         let scaleWidth = document.getElementById("scale").offsetWidth;
+         let position;
+
+         if (result <= 18.5) {
+            position = (result / 18.5) * 0.25 * scaleWidth;
+         } else if (result <= 25) {
+            position = 0.25 * scaleWidth + ((result - 18.5) / (25 - 18.5)) * 0.25 * scaleWidth;
+         } else if (result <= 30) {
+            position = 0.5 * scaleWidth + ((result - 25) / (30 - 25)) * 0.25 * scaleWidth;
+         } else {
+            position = 0.75 * scaleWidth + Math.min(((result - 30) / 10) * 0.25 * scaleWidth, 0.25 * scaleWidth);
+         }
+
+         document.getElementById("pointer").style.left = `${position}px`;
+
+         let imagePlaceholder = document.getElementById("image-placeholder");
+         imagePlaceholder.innerHTML = imagePath
+            ? `<img src="${imagePath}" alt="${category}">`
+            : "<p>No Image</p>";
+      }
+   </script>
+</body>
+
+</html>
