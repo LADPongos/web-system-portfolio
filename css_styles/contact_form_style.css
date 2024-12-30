@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.contact-left {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 20px;
+}
+
+.contact-left-title h2 {
+   font-weight: 600px;
+   font-size: 40px;
+   margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+   border: none;
+   width: 120px;
+   height: 5px;
+   background-color: #000000;
+   border-radius: 10px;
+   margin-bottom: 20px;
+}
+
+.contact-input {
+   width: 400px;
+   height: 50px;
+   border: 1px solid black;
+   outline: none;
+   padding-left: 25px;
+   font-weight: 500px;
+   border-radius: 50px;
+   transition: 0.2s ease;
+}
+
+.contact-left textarea {
+   height: 140px;
+   padding-top: 15px;
+   border-radius: 20px;
+}
+
+.contact-left button {
+   display: flex;
+   align-items: center;
+   padding: 15px 30px;
+   font-size: 16px;
+   color: #ffffff;
+   gap: 10px;
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   background: #ff5e23;
+}
+
+.contact-input:focus {
+   border: 3px solid #ff5e23;
+}
+
+.contact-left button:active {
+   background: #ff9a76;
+}
